@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiSubtitle"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/uiThumb"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/uiTitle"
+        app:layout_constraintRight_toLeftOf="@+id/uiArrow"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTitle"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/uiThumb"
+        app:layout_constraintRight_toLeftOf="@+id/uiArrow"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/uiThumb"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:id="@+id/uiArrow"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+</android.support.constraint.ConstraintLayout>

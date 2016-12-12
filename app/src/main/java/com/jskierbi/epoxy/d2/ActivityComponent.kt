@@ -1,6 +1,6 @@
 package com.jskierbi.epoxy.d2
 
-import com.jskierbi.epoxy.MainActivity
+import com.jskierbi.epoxy.ui.MainActivity
 import com.jskierbi.epoxy.d2.scope.ActivityScope
 import dagger.Subcomponent
 
